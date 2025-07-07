@@ -1,26 +1,18 @@
 Pro spuštění skriptu je vhodné vytvořit nové virtuální prostředí a aktivovat ho:
 
-bash
-Zkopírovat
-Upravit
+
 python -m venv venv
 Na Linuxu/macOS aktivujete prostředí pomocí:
 
-bash
-Zkopírovat
-Upravit
+
 source venv/bin/activate
 Na Windows:
 
-cmd
-Zkopírovat
-Upravit
+cmd:
+
 venv\Scripts\activate
 Potřebné knihovny je možné nainstalovat v tomto prostředí pomocí přiloženého souboru requirements.txt:
 
-bash
-Zkopírovat
-Upravit
 pip install -r requirements.txt
 Popis skriptu
 Skript main.py slouží ke stažení statistik z voleb ze stránek ČSÚ na této adrese:
@@ -38,9 +30,7 @@ https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102
 Název CSV souboru (bez přípony), do kterého se mají statistiky ukládat, např. statistiky_kladno.
 
 Ukázka spuštění:
-bash
-Zkopírovat
-Upravit
+
 python3 main.py 'https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102' statistiky_kladno
 Co skript dělá
 Prochází seznam obcí v daném okrese.
@@ -60,10 +50,10 @@ a poté: Program dokončil stahování.
 Při neexistující nebo nereagující URL:
 Např.
 Error: HTTPSConnectionPool(host='voby.cz', port=443)...
-→ Chyba při zadání: První argument není funkční URL nebo stránka nereaguje.
+Chyba při zadání: První argument není funkční URL nebo stránka nereaguje.
 
 Při špatně zadaném názvu CSV souboru (např. kladno.csv):
-→ Chyba při zadání: Neplatný název souboru.
+Chyba při zadání: Neplatný název souboru.
 Povolené jsou pouze alfanumerické znaky, podtržítko a pomlčka. Název nesmí obsahovat příponu .csv.
 
 Při funkční URL, ale nesprávné adrese (např. odkaz na celostátní přehled místo konkrétního okresu):
