@@ -41,6 +41,8 @@ Výsledky ukládá do CSV souboru ve formátu Unicode UTF-8.
 
 CSV soubor obsahuje jeden řádek pro každou obec. Sloupce reprezentují jednotlivé strany a jejich volební výsledky (počet hlasů, procenta apod.).
 
+nebo spustit v IDE s parametry https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102 kladno
+
 Chování při chybách
 Při úspěšném spuštění:
 Skript vypíše např.:
